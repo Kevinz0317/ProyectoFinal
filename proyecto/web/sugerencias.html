@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sugerencias - Last Hope: Final Sacrifice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sugerencias.html">Haz una Sugerencia</a>
+            <a href="sobrenosotros.html">Sobre Nosotros</a>
+            <a href="donaciones.html">Haz una Donación</a>
+            <a href="iniciarsesion.html">Iniciar Sesion</a>
+        </nav>
+        <br><br>
+        <div class="form-container">
+            <h2>Deja tus sugerencias</h2>
+            <form method="POST" action="SugerenciasServlet">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="text-input" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="text-input" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" class="text-input" required></textarea>
+
+                <label for="calificacion">Calificación del proyecto:</label>
+                <select name="calificacion" id="calificacion" class="text-input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
